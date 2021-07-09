@@ -6,10 +6,19 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="helloWorld" class="com.chetan.SpringTest.HelloWorld">
-		<property name="msg" value="Hello World! Object 1" />
+	<bean name="B" class="com.chetan.ref.B">
+		<property name="y" value="30" />
 	</bean>
 
-	<bean id="helloWorld1" class="com.chetan.SpringTest.HelloWorld" p:msg="P value set" />
+	<bean name="A" class="com.chetan.ref.A">
+		<property name="x" value="20" />
+		<property name="ob">
+			<ref bean="B"></ref>
+		</property>
+	</bean>
+
+<bean class="com.chetan.ref.A" name="A1" p:x="20" p:ob-ref="B" />
 		
+
+
 </beans>

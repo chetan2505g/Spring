@@ -1,4 +1,4 @@
-package com.accelya.SpringTest;
+package com.chetan.SpringTest;
 
 public class HelloWorld {
 	private String msg;
@@ -14,7 +14,7 @@ public class HelloWorld {
 
 	@Override
 	public String toString() {
-		return "HelloWord [msg=" + msg + "]";
+		return "To String HelloWord [msg=" + msg + "]";
 	}
 
 }
