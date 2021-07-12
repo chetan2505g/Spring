@@ -1,13 +1,18 @@
 package com.chetan.constractor;
 
+import java.util.List;
+
 public class Person {
 	private String name;
 	private int personId;
+	private List<String> certi;
+	
 
-	public Person(String name, int personId) {
+	public Person(String name, int personId, List<String> certi) {
 		super();
 		this.name = name;
 		this.personId = personId;
+		this.certi = certi;
 	}
 
 	public Person() {
@@ -17,7 +22,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person [name=" + this.name + ", personId=" + this.personId + "]";
+		return "Person [name=" + this.name + ", personId=" + this.personId +" Certificate: "+ this.certi + "]" ;
 	}
 
 }

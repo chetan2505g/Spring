@@ -6,17 +6,13 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean name="person" class="com.chetan.constractor.Person">
-		<constructor-arg value="Chetan Con" />
-		<constructor-arg value="12" type="int" />
-		<constructor-arg>
-				<list>
-				<value>Java1</value>
-				<value>Java2</value>
-				</list>
-		</constructor-arg>
+	<bean name="somosa" class="com.chetan.lifecycle.Somosa"
+		init-method="init" destroy-method="destroy">
+		<property name="price" value="55" />
 	</bean>
 
-
+	<bean name="pepsi" class="com.chetan.lifecycle.Pepsi">
+		<property name="price" value="55" />
+	</bean>
 
 </beans>
