@@ -14,12 +14,17 @@ public class App {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/chetan/lifecycle/BeansLC.xml");
 		context.registerShutdownHook();
 		
-		Somosa obj = (Somosa) context.getBean("somosa");
-		System.out.println("Employee Object:" + obj);
+//		Somosa obj = (Somosa) context.getBean("somosa");
+//		System.out.println("Employee Object:" + obj);
+//		
+//		System.out.println("******* Pepsi **********");
+//		Pepsi pepsi =(Pepsi) context.getBean("pepsi");
+//		System.out.println("Pepsi: " +pepsi);
 		
-		System.out.println("******* Pepsi **********");
-		Pepsi pepsi =(Pepsi) context.getBean("pepsi");
-		System.out.println("Pepsi: " +pepsi);
+		System.out.println("******* Example **********");
+		Example exam=(Example) context.getBean("example");
+		System.out.println("Example : " + exam);
 		System.out.println("Run succesfully");
+		
 	}
 }

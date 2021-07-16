@@ -4,11 +4,11 @@ public class Somosa {
 	private double price;
 
 	public void init() {
-		System.out.println("Initialize the method");
+		System.out.println("Somosa Initialize the method");
 	}
 
 	public void destroy() {
-		System.out.println("Destroy object");
+		System.out.println("Somosa Destroy object");
 	}
 
 	public double getPrice() {
